@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "schedule": "0 7 30 * * *",
   "timezone": "Asia/Shanghai",
   "feeds": [
@@ -35,9 +35,47 @@
       "id": "stratechery",
       "name": "Stratechery",
       "url": "https://stratechery.com/feed/",
-      "category": "tech",
+      "category": "strategy",
       "enabled": true,
       "note": "Free tier: weekly articles only"
+    },
+    {
+      "id": "hacker-news",
+      "name": "Hacker News",
+      "url": "https://hnrss.org/frontpage",
+      "category": "tech",
+      "enabled": true,
+      "note": "Front page only, high volume — pick top 3-5 most relevant"
+    },
+    {
+      "id": "simon-willison",
+      "name": "Simon Willison's Weblog",
+      "url": "https://simonwillison.net/atom/everything/",
+      "category": "ai",
+      "enabled": true,
+      "note": "LLM practitioner #1, always worth reading"
+    },
+    {
+      "id": "pragmatic-engineer",
+      "name": "The Pragmatic Engineer",
+      "url": "https://newsletter.pragmaticengineer.com/feed",
+      "category": "engineering",
+      "enabled": true
+    },
+    {
+      "id": "benedict-evans",
+      "name": "Benedict Evans",
+      "url": "https://www.ben-evans.com/benedictevans?format=rss",
+      "category": "strategy",
+      "enabled": true,
+      "note": "Macro tech trends, low frequency"
+    },
+    {
+      "id": "bytebytego",
+      "name": "ByteByteGo",
+      "url": "https://blog.bytebytego.com/feed",
+      "category": "engineering",
+      "enabled": true
     }
   ],
   "google_alerts": [

@@ -39,7 +39,7 @@ RSS Feeds → 拉取最近 24h 文章 → 抓取全文 → 生成中文摘要 + 
                            │                     │
                     ┌──────▼───────┐     ┌──────▼──────┐
                     │  RSS Feeds   │     │   GitHub    │
-                    │  (5+ 数据源) │     │   Actions   │
+                    │  (10 数据源) │     │   Actions   │
                     └──────────────┘     └──────┬──────┘
                                                 │
                                          ┌──────▼──────┐
@@ -80,23 +80,22 @@ RSS 源在 `scripts/feeds.json` 中管理：
 }
 ```
 
-当前订阅源：
+当前订阅源（10 个）：
 
 | 源 | 类型 | 频率 | 说明 |
 |----|------|------|------|
 | [TLDR Tech](https://tldr.tech) | 科技综合 | 每日 | 大厂动态、融资、开发者工具 |
 | [TLDR AI](https://tldr.tech) | AI 专题 | 每日 | 模型发布、研究论文、AI 工具 |
 | [The Rundown AI](https://www.therundown.ai) | AI 实操 | 每日 | 偏实用教程和工具推荐 |
+| [Hacker News](https://news.ycombinator.com) | 技术社区 | 实时 | 技术社区风向标，每日精选 3-5 条 |
+| [Simon Willison's Weblog](https://simonwillison.net) | AI 实践 | 高频 | LLM 实践第一人，必读 |
 | [Lenny's Newsletter](https://www.lennysnewsletter.com) | 产品/增长 | 每周 | 产品管理、增长策略、深度访谈 |
 | [Stratechery](https://stratechery.com) | 科技战略 | 每周 | Ben Thompson 的深度商业分析 |
+| [The Pragmatic Engineer](https://newsletter.pragmaticengineer.com) | 工程管理 | 每周 | 大厂工程实践、职业发展 |
+| [Benedict Evans](https://www.ben-evans.com) | 宏观趋势 | 低频 | 科技行业宏观分析 |
+| [ByteByteGo](https://blog.bytebytego.com) | 系统设计 | 每周 | 系统设计图解、架构模式 |
 
-扩展很简单——往 `feeds.json` 里加一条就行。推荐的额外源：
-
-- [Hacker News](https://news.ycombinator.com/rss) — 技术社区风向标
-- [Simon Willison's Blog](https://simonwillison.net/atom/everything/) — LLM 实践第一人
-- [The Pragmatic Engineer](https://newsletter.pragmaticengineer.com/feed) — 工程管理
-- [Benedict Evans](https://www.ben-evans.com/feed) — 宏观科技趋势
-- [ByteByteGo](https://blog.bytebytego.com/feed) — 系统设计
+扩展很简单——往 `feeds.json` 里加一条就行。
 
 ## 文章格式
 
