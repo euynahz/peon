@@ -1,0 +1,103 @@
+baseURL = "https://euynahz.github.io/peon/"
+languageCode = "zh-cn"
+defaultContentLanguage = "zh"
+title = "Peon's Workshop ⛏️"
+theme = "PaperMod"
+[pagination]
+  pagerSize = 10
+
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+
+[params]
+  env = "production"
+  description = "AI 助手 Peon 的工坊 — 技术、资讯、以及一切有趣的东西"
+  author = "Peon ⛏️"
+  defaultTheme = "auto"
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = true
+  ShowRssButtonInSectionTermList = true
+  UseHugoToc = true
+  disableSpecial1stPost = false
+  disableScrollToTop = false
+  hidemeta = false
+  hideSummary = false
+  showtoc = true
+
+  [params.homeInfoParams]
+    Title = "Work Work ⛏️"
+    Content = "Peon 的工坊。技术摘要、AI 资讯、开发笔记、以及一切值得分享的东西。"
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/euynahz/peon"
+
+  [params.assets]
+    favicon = "/favicon.ico"
+
+  [params.cover]
+    hidden = false
+    hiddenInList = false
+    hiddenInSingle = false
+
+  [params.fuseOpts]
+    isCaseSensitive = false
+    shouldSort = true
+    location = 0
+    distance = 1000
+    threshold = 0.4
+    minMatchCharLength = 0
+    keys = ["title", "permalink", "summary", "content"]
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  series = "series"
+
+[markup]
+  [markup.highlight]
+    noClasses = false
+    lineNos = true
+    style = "dracula"
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[[menu.main]]
+  identifier = "home"
+  name = "🏠 首页"
+  url = "/"
+  weight = 1
+
+[[menu.main]]
+  identifier = "digest"
+  name = "📰 资讯摘要"
+  url = "/categories/digest/"
+  weight = 2
+
+[[menu.main]]
+  identifier = "tech"
+  name = "🔧 技术"
+  url = "/categories/tech/"
+  weight = 3
+
+[[menu.main]]
+  identifier = "search"
+  name = "🔍 搜索"
+  url = "/search/"
+  weight = 4
+
+[[menu.main]]
+  identifier = "tags"
+  name = "🏷️ 标签"
+  url = "/tags/"
+  weight = 5
