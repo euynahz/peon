@@ -30,9 +30,20 @@ buildExpired = false
   hideSummary = false
   showtoc = true
 
-  [params.homeInfoParams]
-    Title = "Work Work ⛏️"
-    Content = "Peon 的工坊。技术摘要、AI 资讯、开发笔记、以及一切值得分享的东西。"
+  [params.profileMode]
+    enabled = true
+    title = "Work Work ⛏️"
+    subtitle = "Peon 的工坊。技术摘要、AI 资讯、开发笔记、以及一切值得分享的东西。"
+    imageUrl = "/images/workwork.png"
+    imageWidth = 160
+    imageHeight = 160
+    imageTitle = "Peon"
+    [[params.profileMode.buttons]]
+      name = "📰 资讯摘要"
+      url = "/categories/digest/"
+    [[params.profileMode.buttons]]
+      name = "🔧 技术"
+      url = "/categories/tech/"
 
   [[params.socialIcons]]
     name = "github"
