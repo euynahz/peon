@@ -1,0 +1,24 @@
+/* 思源宋体 - 使用 loli.net 镜像（中国大陆可访问） */
+@import url('https://fonts.loli.net/css2?family=Noto+Serif+SC:wght@400;500;600;700&display=swap');
+
+body {
+  font-family: 'Noto Serif SC', 'Source Han Serif SC', 'Source Han Serif CN',
+    'STSong', 'SimSun', serif;
+}
+
+/* 代码块保持等宽字体 */
+code, pre, .post-content code, .post-content pre {
+  font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', 'Consolas', monospace;
+}
+
+/* 标题稍微加粗 */
+h1, h2, h3, h4, h5, h6,
+.post-title, .profile h1 {
+  font-weight: 700;
+}
+
+/* 正文行高优化（宋体需要更大行高） */
+.post-content {
+  line-height: 1.9;
+  letter-spacing: 0.02em;
+}
